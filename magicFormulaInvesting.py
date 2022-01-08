@@ -1,8 +1,3 @@
-# Based off of Joel Greenblatt's magic formula investing strategy
-# In his book "The Little Book That Beats the Market"
-# Though the strategy is a bit old now since it was created in 2005
-# His newer book (2010) has an updated strategy
-# The book is called "The Little Book That Still Beats the Market"
 import yfinance as yf
 
 # Should not be a financial or utility company
