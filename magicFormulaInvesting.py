@@ -19,10 +19,12 @@ if marketCap < minimum_marketCap:
 if ticker.info['sector'] == 'Utilities' or ticker.info['sector'] == 'Financial Services':  # noqa: E501
     print("Cannot use a finances or utilities stock")
 
-# Easy way of getting EBITDA and earnings yield
+# Calculate EBIT and earnings yield
 
 yf_EBIT = financialStat.iloc[8, 0]
 yf_earningsYield = round(yf_EBIT/ticker.info['enterpriseValue'], 5)
+
+# Calculate return on capital
 
 yf_currentAssets = balanceSheet.iloc[18, 0]
 yf_currentLiabilities = balanceSheet.iloc[13, 0]
